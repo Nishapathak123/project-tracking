@@ -6,7 +6,7 @@
 body{
     Font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 :root{
 --Very-Dark-Blue: hsl(230, 29%, 20%);
@@ -89,7 +89,7 @@ a{
     background: var(--Light-Grayish-Blue);
     position: absolute;
     left: 57%;
-    width: 100%;
+    width: 43%;
     height: 400px;
     z-index: -999999;
     top: 0;
@@ -132,7 +132,9 @@ a{
     color: var(--Grayish-Blue);
     
 }
-
+.banner{
+    overflow: hidden;
+}
 .banner .wrapper{
     display: flex;
     padding-top: 50px;
@@ -239,7 +241,8 @@ a{
     }
     .navigation::before{
         content: "";
-        left: 43%;
+        left: 40%;
+        width: 42%;
     }
     .banner::after{
         content: " ";
@@ -339,6 +342,7 @@ a{
     content: "";
     left: 50%;
     height: 670px;
+    width: 50%;
 }
 .banner::after{
     content: " ";
@@ -394,8 +398,9 @@ a{
     }
     .navigation::before{
         content: "";
-        left: 55%;
+        left: 62%;
         height: 370px;
+        width: 38%;
     }
     .banner .wrapper .banner-image .mobile-image{
         position: relative;
