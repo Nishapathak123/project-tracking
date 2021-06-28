@@ -15,6 +15,7 @@ body{
 --Light-Grayish-Blue: hsl(207, 33%, 95%);
 --Red: hsl(0, 100%, 68%);
 --light-red: #ff8584;
+--white: #fff;
 }
 h1,h2,h3{
     font-family: 'Barlow Condensed', sans-serif;
@@ -296,12 +297,14 @@ a{
         flex-direction: column;
         align-items: center;
         position: absolute;
-        right: -1px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 100px;
-        width: 230px;
+        width: 600px;
         overflow: hidden;
         height: 40vh;
-         background: var(--Light-Grayish-Blue);
+        z-index: 9;
+         background: var(--white);
         -webkit-transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.4s;
         transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.4s;
     }
@@ -443,11 +446,4 @@ a{
     padding: 8px 15px;
     font-size: 10px;
 }
-}
-@media (max-width: 360px){
-    .navigation::before{
-        content: "";
-        left: 65%;
-        height: 360px;
-    }
 }
